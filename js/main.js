@@ -63,8 +63,16 @@ $(document).ready(function () {
 			return(false); 
 		} 
 	}*/
-	var arr = ["img/link/weixin.png","img/link/qq.jpg"];
-	$(".link").click(function  () {
-		$(".right_link").children("img").src = arr[$(this).index()];
-	})
+	$(".weixin").click(function  () {
+		$(".right_link").html("<img src='img/link/weixin.png' alt='' />")
+	});
+	$(".qq").click(function  () {
+		$(".right_link").html("<img src='img/link/qq.png' alt='' />")
+	});
+	$(".phone").click(function  () {
+		$(".right_link").html("17635433806");
+	});
+	$(".mail").click(function  () {
+		$(".right_link").html("yhwang1017@163.com");
+	});
 });
